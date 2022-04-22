@@ -1,0 +1,83 @@
+dataset:
+  train_img_root : /mnt/DATA-1/DATA-2/Feilong/scformer/data/polyp/TrainDataset/images/
+  train_label_root: /mnt/DATA-1/DATA-2/Feilong/scformer/data/polyp/TrainDataset/masks/
+
+  test_CVC-300_img : /mnt/DATA-1/DATA-2/Feilong/scformer/data/polyp/TestDataset/CVC-300/images/
+  test_CVC-300_label : /mnt/DATA-1/DATA-2/Feilong/scformer/data/polyp/TestDataset/CVC-300/masks/
+
+  test_CVC-ClinicDB_img : /mnt/DATA-1/DATA-2/Feilong/scformer/data/polyp/TestDataset/CVC-ClinicDB/images/
+  test_CVC-ClinicDB_label : /mnt/DATA-1/DATA-2/Feilong/scformer/data/polyp/TestDataset/CVC-ClinicDB/masks/
+
+  test_CVC-ColonDB_img : /mnt/DATA-1/DATA-2/Feilong/scformer/data/polyp/TestDataset/CVC-ColonDB/images/
+  test_CVC-ColonDB_label : /mnt/DATA-1/DATA-2/Feilong/scformer/data/polyp/TestDataset/CVC-ColonDB/masks/
+
+  test_ETIS-LaribPolypDB_img : /mnt/DATA-1/DATA-2/Feilong/scformer/data/polyp/TestDataset/ETIS-LaribPolypDB/images/
+  test_ETIS-LaribPolypDB_label : /mnt/DATA-1/DATA-2/Feilong/scformer/data/polyp/TestDataset/ETIS-LaribPolypDB/masks/
+
+  test_Kvasir_img : /mnt/DATA-1/DATA-2/Feilong/scformer/data/polyp/TestDataset/Kvasir/images/
+  test_Kvasir_label : /mnt/DATA-1/DATA-2/Feilong/scformer/data/polyp/TestDataset/Kvasir/masks/
+
+  class_num: 1
+
+  crop_size : 
+    w: 352
+    h: 352
+  batch_size : 32
+  num_workers : 8
+
+Train_transform_list:
+  resize: 
+      size: [352, 352]
+  random_scale_crop:
+      range: [0.75, 1.25]
+  random_flip:
+      lr: True
+      ud: True
+  random_rotate:
+      range: [0, 359]
+  random_image_enhance:
+      methods: ['contrast', 'sharpness', 'brightness']
+  random_dilation_erosion:
+      kernel_range: [2, 5]
+  tonumpy: NULL
+  normalize: 
+      mean: [0.485, 0.456, 0.406]
+      std: [0.229, 0.224, 0.225]
+  totensor: NULL
+
+Val_transform_list:
+  resize: 
+      size: [352, 352]
+  tonumpy: NULL
+  normalize: 
+      mean: [0.485, 0.456, 0.406]
+      std: [0.229, 0.224, 0.225]
+  totensor: NULL
+
+
+model:
+  model_name : mit_PLD_b2
+  is_pretrained : False
+  pretrained_path : /mnt/DATA-1/DATA-2/Feilong/classification/ssformer/ssformer/ssformer_S/ssformer_S.pth
+  from_epoch : 0
+
+training:
+  device : cuda
+  lr : 1e-4
+  max_epoch : 2000
+  evl_epoch : 0
+
+other:
+  checkpoint_save_path : /mnt/DATA-1/DATA-2/Feilong/classification/ssformer/ssformer/ssformer_S
+  logger_path : /mnt/DATA-1/DATA-2/Feilong/classification/ssformer/ssformer/ssformer_S/segformer.log
+
+test:
+  checkpoint_save_path : result/ssformer_S/ssformer_S.pth
+Test_transform_list:
+  resize: 
+      size: [352, 352]
+  tonumpy: NULL
+  normalize: 
+      mean: [0.485, 0.456, 0.406]
+      std: [0.229, 0.224, 0.225]
+  totensor: NULL
