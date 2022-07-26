@@ -9,7 +9,7 @@ This is the official implementation for [Stepwise Feature Fusion: Local Guides G
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/stepwise-feature-fusion-local-guides-global/medical-image-segmentation-on-cvc-colondb)](https://paperswithcode.com/sota/medical-image-segmentation-on-cvc-colondb?p=stepwise-feature-fusion-local-guides-global)
 
 ## packages
-- Please see requirement.txt
+- Please see requirements.txt
 
 ## Dataset
 - The dataset we used can be download from [here](https://drive.google.com/file/d/1z48bsJftdp4akAlWOziqt6032huYYN9k/view?usp=sharing)
