@@ -33,6 +33,11 @@ This is the official implementation for [Stepwise Feature Fusion: Local Guides G
 
 ## Citation
 ```
-Wang, J., Huang, Q., Tang, F., Meng, J., Su, J., Song, S. (2022). Stepwise Feature Fusion: Local Guides Global. In: Wang, L., Dou, Q., Fletcher, P.T., Speidel, S., Li, S. (eds) Medical Image Computing and Computer Assisted Intervention – MICCAI 2022. MICCAI 2022. Lecture Notes in Computer Science, vol 13433. Springer, Cham. https://doi.org/10.1007/978-3-031-16437-8_11
+Wang, J., Huang, Q., Tang, F., Meng, J., Su, J., Song, S. (2022). 
+Stepwise Feature Fusion: Local Guides Global. 
+In: Wang, L., Dou, Q., Fletcher, P.T., Speidel, S., Li, S. (eds) 
+Medical Image Computing and Computer Assisted Intervention – MICCAI 2022. 
+MICCAI 2022. Lecture Notes in Computer Science, vol 13433. Springer, Cham. 
+https://doi.org/10.1007/978-3-031-16437-8_11
 
 ```
