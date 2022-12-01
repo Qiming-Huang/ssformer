@@ -33,10 +33,26 @@ This is the official implementation for [Stepwise Feature Fusion: Local Guides G
 
 ## Citation
 ```
-@article{wang2022stepwise,
-  title={Stepwise Feature Fusion: Local Guides Global},
-  author={Wang, Jinfeng and Huang, Qiming and Tang, Feilong and Meng, Jia and Su, Jionglong and Song, Sifan},
-  journal={arXiv preprint arXiv:2203.03635},
-  year={2022}
+@InProceedings{10.1007/978-3-031-16437-8_11,
+author="Wang, Jinfeng
+and Huang, Qiming
+and Tang, Feilong
+and Meng, Jia
+and Su, Jionglong
+and Song, Sifan",
+editor="Wang, Linwei
+and Dou, Qi
+and Fletcher, P. Thomas
+and Speidel, Stefanie
+and Li, Shuo",
+title="Stepwise Feature Fusion: Local Guides Global",
+booktitle="Medical Image Computing and Computer Assisted Intervention -- MICCAI 2022",
+year="2022",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="110--120",
+abstract="Colonoscopy, currently the most efficient and recognized colon polyp detection technology, is necessary for early screening and prevention of colorectal cancer. However, due to the varying size and complex morphological features of colonic polyps as well as the indistinct boundary between polyps and mucosa, accurate segmentation of polyps is still challenging. Deep learning has become popular for accurate polyp segmentation tasks with excellent results. However, due to the structure of polyps image and the varying shapes of polyps, it is easy for existing deep learning models to overfit the current dataset. As a result, the model may not process unseen colonoscopy data. To address this, we propose a new state-of-the-art model for medical image segmentation, the SSFormer, which uses a pyramid Transformer encoder to improve the generalization ability of models. Specifically, our proposed Progressive Locality Decoder can be adapted to the pyramid Transformer backbone to emphasize local features and restrict attention dispersion. The SSFormer achieves state-of-the-art performance in both learning and generalization assessment.",
+isbn="978-3-031-16437-8"
 }
+
 ```
