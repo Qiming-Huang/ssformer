@@ -14,24 +14,6 @@ This is the official implementation for [Stepwise Feature Fusion: Local Guides G
 ## Dataset
 - The dataset we used can be download from [here](https://drive.google.com/file/d/1z48bsJftdp4akAlWOziqt6032huYYN9k/view?usp=sharing)
 
-## Result and Checkpoint
-### ssformer-S
-|  dataset   | meanDic  | meanIou  | wFm  | Sm  | meanEm  | mae  |
-|  ----  | ----  |  ----  | ----  |  ----  | ----  |  ----  | 
-| CVC-300  | 0.887 | 0.821  | 0.869 | 0.929  | 0.000 | 0.007  |
-| CVC-ClinicDB  | 0.916 | 0.873  | 0.924 | 0.937  | 0.000 | 0.007  |
-| Kvasir  | 0.925 | 0.878  | 0.921 | 0.931  | 0.000 | 0.017  |
-| CVC-ColonDB  | 0.772 | 0.697  | 0.766 | 0.844  | 0.000 | 0.036  |
-| ETIS | 0.767 | 0.698  | 0.736 | 0.863  | 0.000 | 0.016 |
-### ssformer-L
-|  dataset   | meanDic  | meanIou  | wFm  | Sm  | meanEm  | mae  |
-|  ----  | ----  |  ----  | ----  |  ----  | ----  |  ----  | 
-| CVC-300  | 0.895 | 0.827  | 0.881 | 0.933  | 0.000 | 0.007  |
-| CVC-ClinicDB  | 0.906 | 0.855  | 0.913 | 0.929  | 0.000 | 0.008 |
-| Kvasir  | 0.917 | 0.864  | 0.916 | 0.922  | 0.000 | 0.022  |
-| CVC-ColonDB  | 0.802 | 0.721 | 0.798 | 0.860  | 0.000 | 0.031  |
-| ETIS | 0.796 | 0.720  | 0.771 | 0.873  | 0.000 | 0.014 |
-
 ### Checkpoints
 - The checkpoint for ssformer-S can be downloaded from [here](https://drive.google.com/file/d/1CdX0K1_ZDMrEVGK2cmBfp33lYxLEBwlw/view?usp=sharing)
 - The checkpoint for ssformer-L can be downloaded from [here](https://drive.google.com/file/d/1CEwUOPm1otoEGfXSvcX-y1x80583-Q9C/view?usp=sharing)
